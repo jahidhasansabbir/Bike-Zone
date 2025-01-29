@@ -12,13 +12,53 @@
 </head>
 
 <body>
-   
+    <header class="bg-[url('images/others/bg-banner.jpg')] bg-cover max-h-[675px] bg-left bg-no-repeat relative -z-0">
+        <!-- Overlay -->
+        <div class="bg-gradient-to-bl from-[#00000071] to-[#000000e1] absolute h-full w-full z-0"></div>
+        <!-- Navbar -->
+        <nav class="w-11/12 mx-auto navbar px-0 relative z-10">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl md:text-4xl font-bold pl-0 text-white">Go Ride</a>
+            </div>
+            <div class="navbar-end">
+                <!-- Menu-items -->
+                <ul class="menu hidden md:flex menu-horizontal font-medium text-white px-0 items-center">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Connect</a></li>
+                    <button class="btn bg-[#E76F51] text-white">Login</button>
+                </ul>
+                <!-- Menu-bar -->
+                <div class="dropdown md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pr-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white " fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner -->
+        <section class="w-11/12 mx-auto pb-10 relative md:mt-[135px] z-10">
+
+            <div class="max-w-[720px] space-y-8">
+                <h1 class="md:text-6xl text-2xl font-bold text-white">Keep Your Ride Safe At Every Time</h1>
+                <p class="font-light text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                    nostrud amet.</p>
+                <button class="btn bg-[#E76F51] text-white">Purchase</button>
+            </div>
+        </section>
+    </header>
     <main class="w-11/12 mx-auto">
         <!-- Feature -->
         <section class="space-y-4  my-5 md:my-14">
             <h2 class="text-center text-5xl font-semibold">Fetured Bikes In This Year</h2>
             <p class="text-[#E76F51] text-sm font-semibold text-center">Best bike collection</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 justify-items-center">
                 <img src="images/others/feature-bike.png" class="grayscale" alt="">
                 <img src="images/others/feature-bike.png" alt="">
                 <img src="images/others/feature-bike.png" class="grayscale" alt="">
