@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Go Ride</title>
+</head>
+
+<body>
+    <header class="bg-[url('images/others/bg-banner.jpg')] bg-cover max-h-[675px] bg-left bg-no-repeat relative -z-0">
+        <!-- Overlay -->
+        <div class="bg-gradient-to-bl from-[#00000071] to-[#000000e1] absolute h-full w-full z-0"></div>
+        <!-- Navbar -->
+        <nav class="w-11/12 mx-auto navbar px-0 bg-transparent relative z-10">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-4xl font-bold pl-0 text-white">Go Ride</a>
+            </div>
+            <div class="navbar-end">
+                <!-- Menu-items -->
+                <ul class="menu hidden md:flex menu-horizontal font-medium text-white px-1 items-center">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Connect</a></li>
+                    <button class="btn bg-[#E76F51] text-white">Login</button>
+                </ul>
+                <!-- Menu-bar -->
+                <div class="dropdown md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pr-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white " fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li>
+                            <a>Parent</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner -->
+        <section class="w-11/12 mx-auto pb-10 relative md:mt-[135px] z-10">
+
+            <div class="max-w-[720px] space-y-8">
+                <h1 class="text-6xl font-bold text-white">Keep Your Ride Safe At Every Time</h1>
+                <p class="font-light text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                    nostrud amet.</p>
+                <button class="btn bg-[#E76F51] text-white">Purchase</button>
+            </div>
+        </section>
+    </header>
+    <main class="w-11/12 mx-auto">
+        <!-- Feature -->
+        <section class="space-y-4  my-5 md:my-14">
+            <h2 class="text-center text-5xl font-semibold">Fetured Bikes In This Year</h2>
+            <p class="text-[#E76F51] text-sm font-semibold text-center">Best bike collection</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <img src="images/others/feature-bike.png" class="grayscale" alt="">
+                <img src="images/others/feature-bike.png" alt="">
+                <img src="images/others/feature-bike.png" class="grayscale" alt="">
+            </div>
+        </section>
+        <!-- Latest News -->
+        <section class="my-5 md:my-14 space-y-14">
+            <h2 class="text-center text-5xl font-semibold">Latest News</h2>
+            <!-- card-container -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
+                <!-- card-1 -->
+                <div class="card bg-base-100 shadow-xl border border-[#80808011]">
+                    <figure class="p-6">
+                        <img src="images/others/latest1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-[#E76F51] text-white">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card bg-base-100 shadow-xl border border-[#80808011]">
+                    <figure class="p-6">
+                        <img src="images/others/latest3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-[#E76F51] text-white">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card bg-base-100 shadow-xl border border-[#80808011]">
+                    <figure class="p-6">
+                        <img src="images/others/latest2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-[#E76F51] text-white">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Happy Client -->
+        <section class="my-5 md:my-14 space-y-14">
+            <h2 class="text-center text-5xl font-semibold">Happy <span class="text-[#E76F51]">Clients says</span></h2>
+            <!-- Card container -->
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- card-1 -->
+                <div class="card bg-base-100 border border-[#8080802f] rounded-lg">
+                    <figure class="pt-6">
+                        <img src="images/others/user-2.png" alt="Shoes" class="w-[150px]" />
+                    </figure>
+                    <div class="card-body">
+                        <p class="text-center text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="flex gap-1 justify-center items-center">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-half-stroke-solid.svg" alt="">
+                        </div>
+                        <h4 class="font-semibold text-sm text-[#23A6F0] text-center">Regina Miles</h4>
+                        <h4 class="font-semibold text-sm text-[#252B42] text-center">Banker</h4>
+                        </div>
+                    </div>
+                <!-- card-2 -->
+                <div class="card bg-base-100 border border-[#8080802f] rounded-lg">
+                    <figure class="pt-6">
+                        <img src="images/others/user-3.png" alt="Shoes" class="w-[150px]" />
+                    </figure>
+                    <div class="card-body">
+                        <p class="text-center text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="flex gap-1 justify-center items-center">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-half-stroke-solid.svg" alt="">
+                        </div>
+                        <h4 class="font-semibold text-sm text-[#23A6F0] text-center">Regina Miles</h4>
+                        <h4 class="font-semibold text-sm text-[#252B42] text-center">Banker</h4>
+                        </div>
+                    </div>
+                <!-- card-3 -->
+                <div class="card bg-base-100 border border-[#8080802f] rounded-lg">
+                    <figure class="pt-6">
+                        <img src="images/others/user-1.png" alt="Shoes" class="w-[150px]" />
+                    </figure>
+                    <div class="card-body">
+                        <p class="text-center text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="flex gap-1 justify-center items-center">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-solid.svg" alt="">
+                            <img class="w-[22px]" src="images/icons/star-half-stroke-solid.svg" alt="">
+                        </div>
+                        <h4 class="font-semibold text-sm text-[#23A6F0] text-center">Regina Miles</h4>
+                        <h4 class="font-semibold text-sm text-[#252B42] text-center">Banker</h4>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <!-- FAQ -->
+         <section></section>
+    </main>
+</body>
+
+</html>
